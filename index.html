@@ -1,0 +1,14 @@
+---
+layout: default
+title: Список файлов
+---
+
+<h1>Добро пожаловать</h1>
+
+<h2>Список файлов и папок</h2>
+
+<ul>
+{% for item in site.static_files %}
+  <li><a href="{{ item.path }}">{{ item.path }}</a></li>
+{% endfor %}
+</ul>
